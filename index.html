@@ -1,0 +1,318 @@
+
+<!DOCTYPE html>
+<!-- Informa ao navegador que o documento utiliza HTML5. -->
+
+<html lang="pt-BR">
+<!-- Inicia o documento HTML e informa que o idioma da página é português do Brasil. -->
+
+<head>
+    <!-- Inicia a área de configurações e informações da página. -->
+
+    <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres UTF-8, permitindo acentos e caracteres especiais. -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Faz a página se adaptar a diferentes tamanhos de tela, como celulares e computadores. -->
+
+    <meta name="description" content="Cardápio da hamburgueria Fogo de Palha.">
+    <!-- Define uma descrição da página, que pode aparecer nos resultados dos mecanismos de busca. -->
+
+    <title>Fogo de Palha | Hamburgueria</title>
+    <!-- Define o título que aparece na aba do navegador. -->
+
+    <link rel="icon" href="img/logo.jpg">
+    <!-- Define o ícone que aparece na aba do navegador. -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Conecta o arquivo CSS responsável pela aparência e formatação da página. -->
+
+</head>
+<!-- Fecha a área de configurações do documento. -->
+
+<body>
+    <!-- Inicia o corpo da página, onde fica todo o conteúdo visível para o usuário. -->
+
+    <header class="cabecalho">
+        <!-- Cria o cabeçalho da página. A classe cabecalho permite aplicar estilos CSS. -->
+
+        <div class="container cabecalho-conteudo">
+            <!-- Cria uma divisão para organizar o conteúdo do cabeçalho. -->
+
+            <a class="logo" href="#inicio">
+                <!-- Cria um link que leva à seção com o ID inicio. A classe logo permite estilização. -->
+
+                <img src="img/logo.jpg" alt="Logo Fogo de Palha">
+                <!-- Insere a imagem da logo. src indica o caminho da imagem e alt descreve a imagem. -->
+
+                <span>Fogo de Palha</span>
+                <!-- Define um trecho de texto que identifica o nome da hamburgueria. -->
+
+            </a>
+            <!-- Fecha o link da logo. -->
+
+            <nav aria-label="Navegação principal">
+                <!-- Cria uma área de navegação. aria-label identifica sua finalidade para tecnologias assistivas. -->
+
+                <a href="#inicio">Início</a>
+                <!-- Cria um link que direciona para a seção de início. -->
+
+                <a href="#cardapio">Cardápio</a>
+                <!-- Cria um link que direciona para a seção do cardápio. -->
+
+                <a href="#contato">Contato</a>
+                <!-- Cria um link que direciona para a seção de contato. -->
+
+            </nav>
+            <!-- Fecha a área de navegação. -->
+
+        </div>
+        <!-- Fecha a divisão do conteúdo do cabeçalho. -->
+
+    </header>
+    <!-- Fecha o cabeçalho da página. -->
+
+    <main>
+        <!-- Define o conteúdo principal da página. -->
+
+        <section class="hero" id="inicio">
+            <!-- Cria a seção inicial de destaque. A classe hero permite estilização e o ID inicio identifica a seção. -->
+
+            <div class="container hero-conteudo">
+                <!-- Cria uma divisão para organizar o conteúdo da seção inicial. -->
+
+                <div>
+                    <!-- Agrupa os elementos de texto da seção. -->
+
+                    <p class="destaque">Hambúrguer artesanal</p>
+                    <!-- Cria um parágrafo de destaque para apresentar o tipo de produto. -->
+
+                    <h1>Sabor de verdade, feito na brasa.</h1>
+                    <!-- Define o título principal da página. O h1 representa o título mais importante. -->
+
+                    <p class="hero-texto">
+                        <!-- Inicia um parágrafo com uma classe para personalizar sua aparência. -->
+
+                        Escolha seu hambúrguer favorito e monte o pedido do seu jeito.
+                        <!-- Texto que apresenta a proposta da hamburgueria. -->
+
+                    </p>
+                    <!-- Fecha o parágrafo. -->
+
+                    <a class="botao" href="#cardapio">Ver cardápio</a>
+                    <!-- Cria um link com aparência de botão que leva até o cardápio. -->
+
+                </div>
+                <!-- Fecha a divisão dos textos. -->
+
+                <div class="hero-ilustracao" aria-hidden="true">🍔</div>
+                <!-- Exibe um emoji de hambúrguer como ilustração. aria-hidden impede que leitores de tela anunciem esse elemento decorativo. -->
+
+            </div>
+            <!-- Fecha o conteúdo da seção inicial. -->
+
+        </section>
+        <!-- Fecha a seção inicial. -->
+
+        <section class="cardapio" id="cardapio">
+            <!-- Cria a seção do cardápio. O ID cardapio permite acessar essa área através de links. -->
+
+            <div class="container">
+                <!-- Cria uma divisão para centralizar e organizar o conteúdo. -->
+
+                <div class="titulo-secao">
+                    <!-- Agrupa o título e a descrição da seção. -->
+
+                    <p class="destaque">Nosso cardápio</p>
+                    <!-- Exibe um pequeno texto de destaque. -->
+
+                    <h2>Escolha seu hambúrguer</h2>
+                    <!-- Define o título da seção. h2 é utilizado para títulos de segundo nível. -->
+
+                    <p>Produtos e preços fictícios para o projeto da turma.</p>
+                    <!-- Apresenta uma descrição sobre os produtos e preços. -->
+
+                </div>
+                <!-- Fecha a divisão do título da seção. -->
+
+                <div class="grade-produtos">
+                    <!-- Cria uma área que agrupa os cartões dos produtos. -->
+
+                    <article class="card">
+                        <!-- Cria um cartão independente que representa um produto do cardápio. -->
+
+                        <div class="card-icone" aria-hidden="true">🍔</div>
+                        <!-- Exibe um emoji de hambúrguer como ícone decorativo do produto. -->
+
+                        <h3>Fogo Clássico</h3>
+                        <!-- Define o nome do primeiro hambúrguer. h3 representa um título de terceiro nível. -->
+
+                        <p>Pão brioche, carne artesanal, queijo, salada e molho da casa.</p>
+                        <!-- Apresenta a descrição e os ingredientes do hambúrguer. -->
+
+                        <div class="card-rodape">
+                            <!-- Cria uma divisão para organizar o preço e o link de escolha. -->
+
+                            <strong>R$ 24,90</strong>
+                            <!-- Destaca o preço do hambúrguer em negrito. -->
+
+                            <a href="#pedido">Escolher</a>
+                            <!-- Cria um link que leva o usuário até a seção de pedidos. -->
+
+                        </div>
+                        <!-- Fecha a divisão do rodapé do cartão. -->
+
+                    </article>
+                    <!-- Fecha o cartão do primeiro hambúrguer. -->
+
+                    <article class="card card-destaque">
+                        <!-- Cria o segundo cartão e adiciona uma classe especial para destacá-lo dos demais. -->
+
+                        <span class="selo">Favorito</span>
+                        <!-- Exibe um pequeno selo informando que esse produto é o favorito. -->
+
+                        <div class="card-icone" aria-hidden="true">🥓</div>
+                        <!-- Exibe um emoji de bacon como elemento decorativo. -->
+
+                        <h3>Brasa Bacon</h3>
+                        <!-- Define o nome do segundo hambúrguer. -->
+
+                        <p>Carne artesanal, queijo duplo, bacon crocante e molho defumado.</p>
+                        <!-- Apresenta a descrição e os ingredientes do hambúrguer. -->
+
+                        <div class="card-rodape">
+                            <!-- Agrupa o preço e o link de escolha do produto. -->
+
+                            <strong>R$ 31,90</strong>
+                            <!-- Exibe o preço do segundo hambúrguer em destaque. -->
+
+                            <a href="#pedido">Escolher</a>
+                            <!-- Cria um link para a seção de pedidos. -->
+
+                        </div>
+                        <!-- Fecha o rodapé do segundo cartão. -->
+
+                    </article>
+                    <!-- Fecha o cartão do segundo hambúrguer. -->
+
+                    <article class="card">
+                        <!-- Cria o terceiro cartão de produto. -->
+
+                        <div class="card-icone" aria-hidden="true">🥬</div>
+                        <!-- Exibe um emoji de vegetais como ícone decorativo. -->
+
+                        <h3>Horta na Brasa</h3>
+                        <!-- Define o nome do terceiro hambúrguer. -->
+
+                        <p>Hambúrguer vegetal, queijo, tomate, folhas e maionese temperada.</p>
+                        <!-- Apresenta a descrição e os ingredientes do hambúrguer. -->
+
+                        <div class="card-rodape">
+                            <!-- Agrupa o preço e o link de escolha. -->
+
+                            <strong>R$ 27,90</strong>
+                            <!-- Exibe o preço do terceiro hambúrguer em negrito. -->
+
+                            <a href="#pedido">Escolher</a>
+                            <!-- Cria um link que leva à seção de pedidos. -->
+
+                        </div>
+                        <!-- Fecha o rodapé do terceiro cartão. -->
+
+                    </article>
+                    <!-- Fecha o cartão do terceiro hambúrguer. -->
+
+                </div>
+                <!-- Fecha a grade que agrupa os três produtos. -->
+
+            </div>
+            <!-- Fecha o contêiner do cardápio. -->
+
+        </section>
+        <!-- Fecha a seção do cardápio. -->
+
+        <section class="pedido" id="pedido">
+            <!-- Cria a seção que explica como realizar um pedido. -->
+
+            <div class="container pedido-conteudo">
+                <!-- Cria uma divisão para organizar o conteúdo da seção de pedidos. -->
+
+                <div>
+                    <!-- Agrupa os títulos da seção. -->
+
+                    <p class="destaque">Como pedir</p>
+                    <!-- Exibe um texto de destaque para introduzir as instruções. -->
+
+                    <h2>Um fluxo simples</h2>
+                    <!-- Define o título da seção de pedidos. -->
+
+                </div>
+                <!-- Fecha a divisão dos títulos. -->
+
+                <ol>
+                    <!-- Cria uma lista ordenada, ou seja, uma lista numerada. -->
+
+                    <li><span>1</span> Escolha um hambúrguer.</li>
+                    <!-- Primeiro item da lista. span destaca visualmente o número 1. -->
+
+                    <li><span>2</span> Informe os adicionais.</li>
+                    <!-- Segundo item da lista, explicando que o cliente deve informar os adicionais. -->
+
+                    <li><span>3</span> Confirme endereço e pagamento.</li>
+                    <!-- Terceiro item da lista, orientando a confirmação dos dados. -->
+
+                    <li><span>4</span> Envie o pedido pelo WhatsApp.</li>
+                    <!-- Quarto item da lista, orientando o envio do pedido pelo WhatsApp. -->
+
+                </ol>
+                <!-- Fecha a lista ordenada. -->
+
+            </div>
+            <!-- Fecha o contêiner da seção de pedidos. -->
+
+        </section>
+        <!-- Fecha a seção de pedidos. -->
+
+    </main>
+    <!-- Fecha o conteúdo principal da página. -->
+
+    <footer id="contato">
+        <!-- Cria o rodapé da página. O ID contato permite acessar essa seção pelos links de navegação. -->
+
+        <div class="container rodape-conteudo">
+            <!-- Cria uma divisão para organizar as informações do rodapé. -->
+
+            <div>
+                <!-- Agrupa as informações sobre o nome da hamburgueria. -->
+
+                <strong>Fogo de Palha</strong>
+                <!-- Exibe o nome da hamburgueria em negrito. -->
+
+                <p>Projeto didático — dados fictícios.</p>
+                <!-- Informa que o site é um projeto educacional com dados fictícios. -->
+
+            </div>
+            <!-- Fecha a divisão das informações da hamburgueria. -->
+
+            <div>
+                <!-- Agrupa as informações de horário e localização. -->
+
+                <p>Terça a domingo · 18h às 23h</p>
+                <!-- Exibe os dias e horários de funcionamento. -->
+
+                <p>Parnaíba — PI</p>
+                <!-- Informa a cidade e o estado onde a hamburgueria está localizada. -->
+
+            </div>
+            <!-- Fecha a divisão de horário e localização. -->
+
+        </div>
+        <!-- Fecha o contêiner do rodapé. -->
+
+    </footer>
+    <!-- Fecha o rodapé da página. -->
+
+</body>
+<!-- Fecha o corpo do documento HTML. -->
+
+</html>
+<!-- Encerra o documento HTML. -->
